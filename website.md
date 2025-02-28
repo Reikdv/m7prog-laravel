@@ -19,4 +19,4 @@ Look & Feel:
 
     Zachte, natuurlijke kleuren (crème, bruin, blauwgrijs).
     Elegante, leesbare lettertypes.
-    Duidelijke, minimalistische lay-out met kattenfoto’s.
+    Duidelijke, minimalistische lay-out met kattenfoto’s../vendor/bin/sail up

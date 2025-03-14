@@ -22,3 +22,21 @@ require __DIR__.'/auth.php';
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get(url'/blog', [BlogController::class, 'index'])->name('blog.index');
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class BlogController extends Controller
+{
+    public function index()
+    {
+        return ("HIER KOMT MIJN BLOG");
+    }
+}

@@ -25,18 +25,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::get(url'/blog', [BlogController::class, 'index'])->name('blog.index');
+#Route::get(url'/blog', [BlogController::class, 'index'])->name('blog.index');
 
-<?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class BlogController extends Controller
-{
-    public function index()
-    {
-        return ("HIER KOMT MIJN BLOG");
-    }
-}
+Route::METHOD(URL, CLASS)->name(INTERNE_NAAM);

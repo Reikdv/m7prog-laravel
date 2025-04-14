@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use Faker\Factory as Faker;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
+use Faker\Factory as Faker;
 
 class ProjectSeeder extends Seeder
 {
@@ -18,10 +17,14 @@ class ProjectSeeder extends Seeder
         $faker = Faker::create();
 
         DB::table('projects')->insert([
+            'created_at'  => now(),
+            'updated_at'  => now(),
             'title'       => $faker->colorName(),
             'intro'       => $faker->text(50),
-            'description' => $faker->text(),
-            'active'        => true,
+            'description' => $faker->text(100),
+            'active'      => true,
+            'image'       => $faker->imageUrl('https://picsum.photos/200/300'),
+            
         ]);
     }
 }

@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ProjectController;
 
 use Illuminate\Http\Request;
 
+Route::get('/projects/add', [ProjectController::class, 'add'])->name('project.add');
 Route::get('/about', [ \App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/detailpage', [ \App\Http\Controllers\DetailPageController::class, 'index'])->name('detailpage');
 Route::get('/mainpage', [ \App\Http\Controllers\MainPageController::class, 'index'])->name('mainpage');

@@ -8,6 +8,7 @@ use App\Http\Controllers\ProjectController;
 
 use Illuminate\Http\Request;
 
+Route::get('/projects/index', [ProjectController::class, 'index'])->name('project.index');
 Route::get('/projects/add', [ProjectController::class, 'add'])->name('project.add');
 Route::get('/about', [ \App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::get('/detailpage', [ \App\Http\Controllers\DetailPageController::class, 'index'])->name('detailpage');
